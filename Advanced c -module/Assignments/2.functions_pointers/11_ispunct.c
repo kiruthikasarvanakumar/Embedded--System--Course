@@ -9,7 +9,7 @@ Sample output : Entered character is not an punctuation character
 #include <stdio.h>
 
 //function prototype
-int my_isalnum(char);
+int my_ispunct(char);
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
     scanf("%c", &ch);
     
     //call the function
-    ret = my_isalnum(ch);
+    ret = my_ispunct(ch);
     
     
      if ( ret == 1 )
@@ -35,7 +35,7 @@ int main()
     }
 }
 
-int my_isalnum(char ch)                                                         
+int my_ispunct(char ch)                                                         
 {
     // checking punctuation character
     if ((ch >= '!' && ch <= '/') || (ch >= ':' && ch <= '@') || (ch >= '[' && ch <= '`') || (ch >= '{' && ch <= '~')) {
