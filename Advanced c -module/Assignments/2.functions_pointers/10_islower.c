@@ -9,7 +9,7 @@ Sample output : Entered character is an lower case alphabet.
 #include <stdio.h>
 
 //function prototype
-int my_isalnum(char);
+int my_islower(int);
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
     scanf("%c", &ch);
     
     //call the function
-    ret = my_isalnum(ch);
+    ret = my_islower(ch);
     
     
      if ( ret == 1 )
@@ -35,7 +35,7 @@ int main()
     }
 }
 
-int my_isalnum(char ch)                                                         
+int my_islower(int ch)                                                         
 {
     // checking lower case character 
     if ((ch >= 'a' && ch <= 'z')) {
